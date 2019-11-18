@@ -33,6 +33,6 @@ myApp.use(bodyParser.json())
 //need another routes
 require('./routes.js')(myApp);
 
-myApp.listen(2000,()=>{
-console.log("Server is listenin on :2000");
+myApp.listen(process.env.PORT || 3000,()=>{
+console.log("Server is listening on :3000");
 });
